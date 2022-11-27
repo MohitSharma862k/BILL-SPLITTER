@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
-    <title>Quick Tip</title>
+    <title>BILL SPLITTER</title>
 </head>
 <body>
    <div class = "main_container" id = "container">
-         <h1> Quick Tip</h1>
+         <h1>QUICK SPLIT</h1>
           <div class = "section">
               <div class = "Bill">
-                   <label for="bill" >Bill</label>
-                   <input type="number" placeholder="Your Bill" id = "bill"  oninput = "update()"/> 
+                   <label for="bill" >Amount</label>
+                   <input type="number" placeholder="Enter bill amount" id = "bill"  oninput = "update()"/> 
               </div>
               <div>
                    <div  class = "space_between">
-                   <label for="Tipinput">Select Tip</label>
-                    <span value="" id = "tippercent">0%</span> 
+                   <label for="Taxinput">Select Tax</label>
+                    <span value="" id = "taxpercent">0%</span> 
                   </div>
-                        <input type="range" value = 0 id ="Tipinput" class = "range"/>                   
+                        <input type="range" value = 0 id ="Taxinput" class = "range"/>                   
               </div>
                <div class = "space_between">
-                    <span>Tip</span>
-                     <span id = "tipvalue">$ 0.00</span>
+                    <span>Tax Amount</span>
+                     <span id = "taxvalue">$ 0.00</span>
                </div>  
                <hr>
               <div class = "space_between total">
-                   <span>Total</span>
-                   <span id = "totalwithtip">$ 0.00</span>
+                   <span>Total Amount </span>
+                   <span id = "totalwithtax">$ 0.00</span>
               </div>
           </div>
 
@@ -37,17 +37,17 @@
          <div class = "section">
           <div >
              <div class = space_between>
-                 <label for = "splitinput">Split</label>
+                 <label for = "splitinput">People</label>
                   <span id = "splitvalue">1 Person</span>              
              </div>
-                <input type="range" value ="1" min = "1" max = "10" id = "splitinput" class = "range" />        
+                <input type="range" value ="1" min = "1" max = "20" id = "splitinput" class = "range" />        
            </div>
               <div class = "space_between">
-                    <span>Tip Each</span>
-                <span id ="Tipeach" > $ 0.00</span>
+                    <span>Tax per person</span>
+                <span id ="Taxeach" > $ 0.00</span>
               </div>
               <div class = "space_between">
-                <span> Bill Each</span>
+                <span> Bill per person</span>
                    <span id = "billeach"> $ 0.00</span>
               </div>
          </div> 
