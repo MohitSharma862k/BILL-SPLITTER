@@ -20,4 +20,4 @@ My very first web application.
 * JavaScript
 
 # Link
-[BILL SPLITTER](https://mohitsharma862k.github.io/Tip-Calculator/)
+[BILL SPLITTER](https://mohitsharma862k.github.io/BILL-SPLITTER/)
