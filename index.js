@@ -1,24 +1,24 @@
 console.log("ok");
 function update(){
     let bill = Number(document.getElementById("bill").value);
-    let tip = Number(document.getElementById("Tipinput").value);
+    let tax = Number(document.getElementById("Taxinput").value);
     let split = Number(document.getElementById("splitinput").value);
-    let tipvalue = (bill*tip)/100;
-    let tipeach = tipvalue/split;
-    let billeach = (bill + tipvalue)/split;
+    let taxvalue = (bill*tax)/100;
+    let taxeach = taxvalue/split;
+    let billeach = (bill + taxvalue)/split;
     let totalbill = billeach*split;
-    console.log(typeof tipvalue);
-    tipvalue = tipvalue.toFixed(2);
+    console.log(typeof taxvalue);
+    taxvalue = taxvalue.toFixed(2);
     totalbill = totalbill.toFixed(2);
-    tipeach = tipeach.toFixed(2);
+    taxeach = taxeach.toFixed(2);
     billeach = billeach.toFixed(2);
     
-    document.getElementById("tippercent").innerHTML = tip+ "%";
-    document.getElementById("tipvalue").innerHTML = "$ " + tipvalue ;
+    document.getElementById("taxpercent").innerHTML = tax+ "%";
+    document.getElementById("taxvalue").innerHTML = "$ " + taxvalue ;
     document.getElementById("splitvalue").innerHTML =  split + " Person" ;
-    document.getElementById("Tipeach").innerHTML = "$ " + tipeach ;
+    document.getElementById("Taxeach").innerHTML = "$ " + taxeach ;
     document.getElementById("billeach").innerHTML = "$ " + billeach ;
-    document.getElementById("totalwithtip").innerHTML = "$ " + totalbill ;
+    document.getElementById("totalwithtax").innerHTML = "$ " + totalbill ;
     
 }
 let container = document.getElementById("container");
